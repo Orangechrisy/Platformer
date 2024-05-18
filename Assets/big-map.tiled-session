@@ -1,0 +1,89 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "platformer-map.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "#platformer_farm": {
+            "scaleInDock": 1
+        },
+        "#platformer_food": {
+            "scaleInDock": 1
+        },
+        "#platformer_industrial": {
+            "scaleInDock": 1
+        },
+        "#platformer_main": {
+            "scaleInDock": 1
+        },
+        "C:/Users/chris/Documents/cmpm120/PlatformImprovement/assets/platformer-level-1.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 1.1754050925925925,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 431.7660381074295,
+                "y": 223.7526463492689
+            }
+        },
+        "C:/Users/chris/Documents/cmpm120/PlatformImprovement/assets/platformer-level-1.tmx#kenny_tilemap_packed": {
+            "scaleInDock": 1
+        },
+        "platformer-map.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1471.5,
+                "y": 925.5
+            }
+        },
+        "platformer-map.tmx#platformer_farm": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "platformer-map.tmx#platformer_food": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "platformer-map.tmx#platformer_industrial": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "platformer-map.tmx#platformer_main": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/chris/Documents/cmpm120/Platformer/Assets",
+    "last.imagePath": "C:/Users/chris/Downloads/kenney_pixel-platformer-farm-expansion/Tilemap",
+    "map.height": 100,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 18,
+    "map.tileWidth": 18,
+    "map.width": 180,
+    "openFiles": [
+        "platformer-map.tmx"
+    ],
+    "project": "big-map.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "platformer-map.tmx",
+        "C:/Users/chris/Documents/cmpm120/PlatformImprovement/assets/platformer-level-1.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 18,
+        "width": 18
+    }
+}
