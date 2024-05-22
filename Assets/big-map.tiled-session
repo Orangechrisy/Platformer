@@ -47,6 +47,9 @@
                 "y": 925.5
             }
         },
+        "platformer-map.tmx#dark_packed": {
+            "scaleInEditor": 1
+        },
         "platformer-map.tmx#platformer_farm": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -65,7 +68,7 @@
         }
     },
     "last.exportedFilePath": "C:/Users/chris/Documents/cmpm120/Platformer/Assets",
-    "last.imagePath": "C:/Users/chris/Downloads/kenney_pixel-platformer-farm-expansion/Tilemap",
+    "last.imagePath": "C:/Users/chris/Documents/cmpm120/Platformer/Assets",
     "map.height": 100,
     "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
     "map.lastUsedFormat": "tmx",

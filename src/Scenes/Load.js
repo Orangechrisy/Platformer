@@ -10,18 +10,37 @@ class Load extends Phaser.Scene {
         this.load.atlas("platformer_characters", "platformer_characters.png", "tilemap-characters-packed.json");
 
         // Load tilemap information
-        this.load.image("platformer_main", "platformer_main.png");                         // Packed tilemap
+        this.load.image("platformer_main", "platformer_main.png");
         this.load.image("platformer_food", "platformer_food.png");
         this.load.image("platformer_farm", "platformer_farm.png");
         this.load.image("platformer_industrial", "platformer_industrial.png");
+        this.load.image("darkness", "dark_packed.png")
         this.load.tilemapTiledJSON("platformer-map", "platformer-map.tmj");   // Tilemap in JSON
 
-        this.load.spritesheet("farm_spritesheet", "platformer_food.png", {
+        // objects
+        this.load.spritesheet("food_spritesheet", "platformer_food.png", {
             frameWidth: 18,
             frameHeight: 18
         });
 
-        this.load.image('distort', 'noisesmall.png');
+        // distortion fx
+        this.load.image('distort', 'distortionmessy.png');
+        this.load.image('distort2', 'noisesmall.png');
+        this.load.image('distort3', 'distortioncircle.png');
+
+        // walking sounds
+        this.load.audio("walk_cloud_sound", "walking_clouds.ogg");
+        this.load.audio("walk_concrete_sound", "walking_concrete.ogg");
+        this.load.audio("walk_grass_sound", "walking_grass.ogg");
+        this.load.audio("walk_greenhouse_sound", "walking_greenhouse.ogg");
+        this.load.audio("walk_metal_sound", "walking_metal.ogg");
+        this.load.audio("walk_snow_sound", "walking_snow.ogg");
+
+        // DRANK sound
+        this.load.audio("drinking_sound", "dranking.mp3");
+
+        // particles
+        this.load.multiatlas("kenny-particles", "kenny-particles.json");
     }
 
     create() {
