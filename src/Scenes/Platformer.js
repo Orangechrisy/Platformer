@@ -57,8 +57,8 @@ class Platformer extends Phaser.Scene {
         this.concreteSound = this.sound.add("walk_concrete_sound", {volume: .25, rate: .5});
         this.grassSound = this.sound.add("walk_grass_sound", {volume: .25, rate: .5});
         this.greenhouseSound = this.sound.add("walk_greenhouse_sound", {volume: .25, rate: .5});
-        this.metalSound = this.sound.add("walk_metal_sound", {volume: .25, rate: .5});
-        this.snowSound = this.sound.add("walk_snow_sound", {volume: .25, rate: .5});
+        this.metalSound = this.sound.add("walk_metal_sound", {volume: .15, rate: .25});
+        this.snowSound = this.sound.add("walk_snow_sound", {volume: .15, rate: .5});
         this.allSounds = [this.cloudSound, this.concreteSound, this.grassSound, this.greenhouseSound, this.metalSound, this.snowSound];
         this.dranking = this.sound.add("drinking_sound", {volume: 1, rate: 2.5})
 
@@ -304,7 +304,6 @@ class Platformer extends Phaser.Scene {
 
             my.sprite.player.anims.play('idle');
 
-            this.stopWalkSound();
             my.vfx.walking.stop();
         }
 
@@ -338,53 +337,24 @@ class Platformer extends Phaser.Scene {
         let tile = this.getTileBelowPlayer();
         if (tile) {
             if (tile.properties["cloudSound"] && !this.cloudSound.isPlaying) {
-                this.allSounds.forEach(sound => {
-                    sound.stop();
-                })
                 this.cloudSound.play();
             }
             if (tile.properties["concreteSound"] && !this.concreteSound.isPlaying) {
-                this.allSounds.forEach(sound => {
-                    sound.stop();
-                })
                 this.concreteSound.play();
             }
             if (tile.properties["grassSound"] && !this.grassSound.isPlaying) {
-                this.allSounds.forEach(sound => {
-                    sound.stop();
-                })
                 this.grassSound.play();
             }
             if (tile.properties["greenhouseSound"] && !this.greenhouseSound.isPlaying) {
-                this.allSounds.forEach(sound => {
-                    sound.stop();
-                })
                 this.greenhouseSound.play();
             }
             if (tile.properties["metalSound"] && !this.metalSound.isPlaying) {
-                this.allSounds.forEach(sound => {
-                    sound.stop();
-                })
                 this.metalSound.play();
             }
             if (tile.properties["snowSound"] && !this.snowSound.isPlaying) {
-                this.allSounds.forEach(sound => {
-                    sound.stop();
-                })
                 this.snowSound.play();
             }
         }
-        else {
-            this.allSounds.forEach(sound => {
-                sound.stop();
-            })
-        }
-    }
-
-    stopWalkSound() {
-        this.allSounds.forEach(sound => {
-            sound.stop();
-        })
     }
 
     getTileBelowPlayer() {
