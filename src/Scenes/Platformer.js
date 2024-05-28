@@ -53,7 +53,7 @@ class Platformer extends Phaser.Scene {
         my.sprite.player.setMaxVelocity(this.MAX_SPEED, 1000);
 
         // set up sound
-        this.cloudSound = this.sound.add("walk_cloud_sound", {volume: .25, rate: .5});
+        this.cloudSound = this.sound.add("walk_clouds_sound", {volume: .25, rate: .5});
         this.concreteSound = this.sound.add("walk_concrete_sound", {volume: .25, rate: .5});
         this.grassSound = this.sound.add("walk_grass_sound", {volume: .25, rate: .5});
         this.greenhouseSound = this.sound.add("walk_greenhouse_sound", {volume: .25, rate: .5});

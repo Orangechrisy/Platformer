@@ -29,7 +29,7 @@ class Load extends Phaser.Scene {
         this.load.image('distort3', 'distortioncircle.png');
 
         // walking sounds
-        this.load.audio("walk_cloud_sound", "walking_clouds.ogg");
+        this.load.audio("walk_clouds_sound", "walking_cloud.ogg");
         this.load.audio("walk_concrete_sound", "walking_concrete.ogg");
         this.load.audio("walk_grass_sound", "walking_grass.ogg");
         this.load.audio("walk_greenhouse_sound", "walking_greenhouse.ogg");
